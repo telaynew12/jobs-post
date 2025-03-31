@@ -22,7 +22,7 @@
     
     <script>
         async function fetchJobs() {
-            const res = await fetch('https://your-backend.onrender.com/jobs');
+            const res = await fetch('https://jobs-post.onrender.com');
             const jobs = await res.json();
             document.getElementById('jobs').innerHTML = jobs.map(j => `<div class='job'><h3>${j.title}</h3><p>${j.company}</p></div>`).join('');
         }
